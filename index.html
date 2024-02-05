@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Calculadora de Promedio</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Calculadora de promedio</h1>
+        <p>El siguiente programa realizará el cálculo de tres notas parciales, un examen parcial y un trabajo final de un estudiante, para obtener el promedio y verificar si aprobó o reprobó.</p>
+        <p>Las notas que se van a ingresar deben estar en un rango de 0 a 50.</p>
+        <form action="">
+            <div class="row g-3">
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="number" id="nota1" class="form-control" placeholder="" required><br>
+                        <label for="floatingInput">Nota parcial 1:</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="number" id="nota2" class="form-control" placeholder="" required><br>
+                        <label for="floatingInput">Nota parcial 2:</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="number" id="nota3" class="form-control" placeholder="" required><br>
+                        <label for="floatingInput">Nota parcial 3:</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="number" id="examParcial" class="form-control" placeholder="" required><br>
+                        <label for="floatingInput">Examen Parcial:</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="number" id="trabFinal" class="form-control" placeholder="" required><br>
+                        <label for="floatingInput">Trabajo Final:</label>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-dark" onclick="calcularPromedio()">Calcular Promedio</button>
+       
+            <div id="tablaResultado" style="display: none; margin-top: 20px;">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Descripción</th>
+                            <th>Promedio</th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Promedio de parciales (55%)</td>
+                            <td id="promedioParciales"></td>
+                        </tr>
+                        <tr>
+                            <td>Promedio del examen final (30%)</td>
+                            <td id="promedioExamen"></td>
+                        </tr>
+                        <tr>
+                            <td>Promedio del trabajo final (15%)</td>
+                            <td id="promedioTrabajo"></td>
+                        </tr>
+                        <tr>
+                            <td>Promedio Final</td>
+                            <td id="promedioFinal"></td>
+                        </tr>
+                        <tr>
+                            <td>Estado</td>
+                            <td id="result"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+    <script src="PromFinal.js"></script>
+</body>
+</html>

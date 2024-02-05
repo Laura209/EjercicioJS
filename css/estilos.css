@@ -1,0 +1,42 @@
+.form-container {
+    margin-left: 30%;
+    max-width: 700px; 
+    padding: 40px;
+    border: 2px solid black;
+    text-align: center;     
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.884);
+}
+
+.texto{
+    color: red;
+}
+
+.form-control{
+    border-radius: 8px;
+}
+
+.table{
+    padding-bottom:  30px;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+}
+  
+.form-control:focus{
+    outline: none;
+    border-color: #3482db;
+    box-shadow: 0 0 8px rgba(52,152,219,0.7);
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../img/Blue\ Modern\ Gaming\ Channel\ Banner\ Landscape.png);
+    opacity: 100em;
+    background-size: cover;
+    background-position: center;
+    margin: 60px;
+}
